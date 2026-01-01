@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spade Apps - Elegant Solutions for Everyday Life</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <title>SPADE STUDIO - Elegance in Function</title>
+    <link rel="icon" type="image/svg+xml" href="spade-studio-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -17,219 +17,200 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #e8e8e8;
+            background: #f5f5f5;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
-            color: #2d3748;
+            padding: 40px 20px;
+            color: #1a1a1a;
         }
 
         .container {
-            background: #e8e8e8;
-            border-radius: 40px;
-            box-shadow: 20px 20px 60px #c5c5c5, -20px -20px 60px #ffffff;
-            max-width: 800px;
+            max-width: 700px;
             width: 100%;
-            padding: 60px 40px;
+            padding: 40px;
+            background: #f5f5f5;
+            border: 1px solid #1a1a1a;
+        }
+
+        .header {
             text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5e5e5;
         }
 
         .logo {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 120px;
-            height: 120px;
-            background: #e8e8e8;
-            border-radius: 28px;
-            margin-bottom: 32px;
-            box-shadow: 8px 8px 16px #c5c5c5, -8px -8px 16px #ffffff;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 30px;
         }
 
         .logo svg {
-            width: 64px;
-            height: 64px;
-            fill: #ff6b35;
+            width: 100%;
+            height: 100%;
         }
 
         h1 {
-            font-size: 48px;
-            font-weight: 300;
-            color: #3a3a3a;
-            margin-bottom: 16px;
-            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 38px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
 
         .tagline {
-            font-size: 20px;
-            color: #ff6b35;
-            font-weight: 600;
-            margin-bottom: 40px;
-            letter-spacing: 0.5px;
+            font-size: 15px;
+            color: #666;
+            font-weight: 400;
+            letter-spacing: 0.3px;
         }
 
         .description {
-            font-size: 17px;
+            font-size: 18px;
             line-height: 1.8;
-            color: #6b6b6b;
-            margin-bottom: 24px;
-            text-align: left;
-            font-weight: 300;
+            color: #4a4a4a;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .mission {
-            background: #e8e8e8;
-            border-left: 4px solid #ff6b35;
-            padding: 28px;
-            border-radius: 20px;
-            margin: 32px 0;
-            text-align: left;
-            box-shadow: 8px 8px 16px #c5c5c5, -8px -8px 16px #ffffff;
+            padding: 0;
+            margin: 0 0 40px 0;
         }
 
         .mission h2 {
-            font-size: 24px;
-            color: #d35400;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            color: #1a1a1a;
             margin-bottom: 16px;
-            font-weight: 600;
+            font-weight: 500;
+            letter-spacing: -0.3px;
         }
 
         .mission p {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 1.7;
-            color: #6b6b6b;
-            margin-bottom: 12px;
-            font-weight: 300;
+            color: #4a4a4a;
+            margin-bottom: 0;
+        }
+
+        .mission p:last-child {
+            margin-bottom: 0;
         }
 
         .values {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
-            margin-top: 40px;
+            gap: 1px;
+            background: #e5e5e5;
+            border: 1px solid #e5e5e5;
+            margin-top: 0;
         }
 
         .value-card {
-            background: #e8e8e8;
-            padding: 24px;
-            border-radius: 20px;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 8px 8px 16px #c5c5c5, -8px -8px 16px #ffffff;
+            background: #ffffff;
+            padding: 28px 24px;
+            transition: background 0.2s ease;
         }
 
         .value-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 12px 12px 24px #c5c5c5, -12px -12px 24px #ffffff;
-        }
-
-        .value-icon {
-            width: 48px;
-            height: 48px;
-            background: #e8e8e8;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 16px;
-            box-shadow: inset 3px 3px 6px #c5c5c5, inset -3px -3px 6px #ffffff;
-        }
-
-        .value-icon svg {
-            width: 24px;
-            height: 24px;
-            fill: #ff6b35;
+            background: #fafafa;
         }
 
         .value-card h3 {
-            font-size: 18px;
-            color: #d35400;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 17px;
+            color: #1a1a1a;
             margin-bottom: 8px;
-            font-weight: 600;
+            font-weight: 500;
+            letter-spacing: -0.2px;
         }
 
         .value-card p {
-            font-size: 15px;
-            color: #6b6b6b;
+            font-size: 14px;
+            color: #666;
             line-height: 1.6;
-            font-weight: 300;
         }
 
         @media (max-width: 768px) {
             .container {
-                padding: 40px 24px;
+                padding: 0;
+            }
+
+            .header {
+                margin-bottom: 60px;
+                padding-bottom: 40px;
             }
 
             h1 {
-                font-size: 36px;
+                font-size: 38px;
             }
 
             .tagline {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             .description {
                 font-size: 16px;
             }
 
+            .mission {
+                padding: 32px 24px;
+            }
+
+            .mission h2 {
+                font-size: 24px;
+            }
+
             .values {
                 grid-template-columns: 1fr;
+            }
+
+            .value-card {
+                padding: 32px 24px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="logo">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5zm0 2.18l7 3.89v4.93c0 4.54-3.07 8.79-7 9.93-3.93-1.14-7-5.39-7-9.93V8.07l7-3.89zM8 10v6h2v-6H8zm3 0v6h2v-6h-2zm3 0v6h2v-6h-2z"/>
-            </svg>
-        </div>
+        <div class="header">
+            <div class="logo">
+                <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="323.5" y="334.5" width="136" height="136" transform="rotate(90 323.5 334.5)" fill="#2A332D" stroke="#2A332D"/>
+                    <rect x="304.5" y="60.5" width="98" height="98" transform="rotate(90 304.5 60.5)" stroke="#2A332D" stroke-width="39"/>
+                    <rect x="275" y="207" width="98" height="39" transform="rotate(90 275 207)" fill="#2A332D"/>
+                    <rect x="275" y="207" width="98" height="39" transform="rotate(90 275 207)" stroke="#2A332D"/>
+                </svg>
+            </div>
 
-        <h1>Spade Apps</h1>
-        <p class="tagline">Elegant Solutions for Everyday Life</p>
-
-        <div class="description">
-            <p>We believe technology should simplify life, not complicate it. That's why we create thoughtfully designed mobile applications that solve real problems people face every day.</p>
+            <h1>SPADE STUDIO</h1>
+            <p class="tagline">Elegance in Function</p>
         </div>
 
         <div class="mission">
-            <h2>Our Mission</h2>
-            <p>At Spade Apps, we're committed to building elegant and usable phone apps that help with everyday problems. We don't chase trends or add unnecessary features—instead, we focus on creating tools that are intuitive, reliable, and genuinely useful.</p>
-            <p>Every app we build starts with a simple question: "How can we make someone's day a little bit easier?" Whether it's managing tasks, staying organized, or connecting with others, we design with empathy and attention to detail.</p>
-            <p>We believe in the power of minimalism—cutting away the clutter to reveal what truly matters. Our apps are crafted to feel natural in your hands, responding to your needs without getting in the way.</p>
+            <p>We build apps that solve everyday problems with simplicity and purpose. Technology should simplify life, not complicate it.</p>
         </div>
 
         <div class="values">
             <div class="value-card">
-                <div class="value-icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
-                    </svg>
-                </div>
-                <h3>Simplicity</h3>
-                <p>Clean, intuitive interfaces that anyone can use without a manual</p>
-            </div>
-
-            <div class="value-card">
-                <div class="value-icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"/>
-                    </svg>
-                </div>
-                <h3>Quality</h3>
-                <p>Carefully crafted experiences that work flawlessly every time</p>
-            </div>
-
-            <div class="value-card">
-                <div class="value-icon">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-                    </svg>
-                </div>
                 <h3>Purpose</h3>
-                <p>Every feature exists to solve a real problem in meaningful ways</p>
+                <p>Solving real problems in meaningful ways.</p>
+            </div>
+
+            <div class="value-card">
+                <h3>Simplicity</h3>
+                <p>Intuitive tools that anyone can use without a manual.</p>
+            </div>
+
+            <div class="value-card">
+                <h3>Quality</h3>
+                <p>Intentional design that works flawlessly every time.</p>
             </div>
         </div>
     </div>
